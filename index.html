@@ -27,6 +27,11 @@
 
 	</script>
 	<script>
+	var getGuid = function generateQuickGuid() {
+	    return Math.random().toString(36).substring(2, 15) +
+	        Math.random().toString(36).substring(2, 15);
+	}
+
 	function getQueryVariable(variable)
 	{
 	       var query = window.location.search.substring(1);
@@ -55,13 +60,14 @@
 	    }
 	    return "";
 	}
+	
 
 	function checkCookie() {
 	    var user = getCookie("username");
 	    if (user != "") {
 	        console.log("Welcome again " + user);
 	    } else {
-            setCookie("username", "user1", 365);      
+            setCookie("username", getGuid , 365);      
 	    }
 	}
 	</script>
