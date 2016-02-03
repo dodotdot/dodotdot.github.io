@@ -11,9 +11,41 @@
 	  ga('send', 'pageview');
 
 	</script>
+	<script>
+	function getQueryVariable(variable)
+	{
+	       var query = window.location.search.substring(1);
+	       var vars = query.split("&");
+	       for (var i=0;i<vars.length;i++) {
+	               var pair = vars[i].split("=");
+	               if(pair[0] == variable){return pair[1];}
+	       }
+	       return(false);
+	}
+
+	</script>
 </head>
 <body>
-Hello World
 
+	<div id="duck">
+		Hello Duck	
+		<img src="http://www.canoefoundation.org.uk/cf/assets/Image/Yellow%20Duck.jpg">
+	</div>
+
+	<div id="cat" style="display:none;">
+		Hello Cat	
+		<img src="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg">
+	</div>
+
+ <script type="text/javascript">
+    
+	var flag= getQueryVariable('param');
+	console.log(flag+' ----');
+
+	if(flag=='cat'){
+	  document.getElementById("duck").style.display= "none";
+	  document.getElementById("cat").style.display= "block";
+	}
+  </script>
 </body>
 </html>
