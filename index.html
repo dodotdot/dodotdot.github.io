@@ -3,7 +3,7 @@
 	<title>tester</title>
 	<!-- Google Analytics Content Experiment code -->
 	<script>function utmx_section(){}function utmx(){}(function(){var
-	k='116011007-0',d=document,l=d.location,c=d.cookie;
+	k='116011007-1',d=document,l=d.location,c=d.cookie;
 	if(l.search.indexOf('utm_expid='+k)>0)return;
 	function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
 	indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
@@ -97,7 +97,7 @@
 		<h1>Hello Duck!</h1>
 		<img width="200px" src="duck.jpg">
 		<p>
-			<button class="btn" id="click_duck"> Click</button>
+			<button class="btn" onClick="ga('send', 'event', 'button', 'click', 'Click Duck');" id="click_duck"> Click</button>
 		</p>
 	</div>
 
@@ -105,7 +105,7 @@
 		<h1>Hello Cat!</h1>
 		<img width="200px" src="cat.jpg">
 		<p>
-			<button class="btn" id="click_cat"> Click</button>
+			<button class="btn"  onClick="ga('send', 'event', 'button', 'click', 'Click Cat');"  id="click_cat"> Click</button>
 		</p>
 	</div>
 
@@ -113,7 +113,7 @@
 		<h1>Hello Dog!</h1>
 		<img width="200px" src="dog.jpg">
 		<p>
-			<button class="btn" id="click_dog"> Click</button>
+			<button class="btn"  onClick="ga('send', 'event', 'button', 'click', 'Click Dog');"  id="click_dog"> Click</button>
 		</p>
 	</div>
 
