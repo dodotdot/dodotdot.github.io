@@ -16,6 +16,16 @@
 	</script><script>utmx('url','A/B');</script>
 	<!-- End of Google Analytics Content Experiment code -->
 
+	<!-- Google Tag Manager -->
+	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MZBVLH"
+	height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+	<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+	new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+	j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+	'//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+	})(window,document,'script','dataLayer','GTM-MZBVLH');</script>
+	<!-- End Google Tag Manager -->
+	
 	<script>
 	  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
 	  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
@@ -60,7 +70,6 @@
 	    }
 	    return "";
 	}
-	
 
 	function checkCookie() {
 	    var user = getCookie("username");
@@ -75,13 +84,27 @@
 <body onload="checkCookie()">
 
 	<div id="duck">
-		<h1>Hello Duck</h1>
-		<img src="http://www.canoefoundation.org.uk/cf/assets/Image/Yellow%20Duck.jpg">
+		<h1>Hello Duck!</h1>
+		<img width="200px" src="duck.jpg">
+		<p>
+			<button class="btn" id="click_duck"> Click</button>
+		</p>
 	</div>
 
 	<div id="cat" style="display:none;">
-		<h1>Hello Cat</h1>
-		<img src="https://pbs.twimg.com/profile_images/378800000532546226/dbe5f0727b69487016ffd67a6689e75a.jpeg">
+		<h1>Hello Cat!</h1>
+		<img width="200px" src="cat.jpg">
+		<p>
+			<button class="btn" id="click_cat"> Click</button>
+		</p>
+	</div>
+
+	<div id="dog" style="display:none;">
+		<h1>Hello Dog!</h1>
+		<img width="200px" src="dog.jpg">
+		<p>
+			<button class="btn" id="click_dog"> Click</button>
+		</p>
 	</div>
 
  <script type="text/javascript">
@@ -89,9 +112,24 @@
 	var flag= getQueryVariable('param');
 	console.log(flag+' ----');
 
-	if(flag=='cat'){
-	  document.getElementById("duck").style.display= "none";
-	  document.getElementById("cat").style.display= "block";
+	switch(flag){
+		case 'duck':
+		  document.getElementById("duck").style.display= "block";
+		  document.getElementById("cat").style.display= "none";
+		  document.getElementById("dog").style.display= "none";
+		break;
+		case 'cat':
+		  document.getElementById("duck").style.display= "none";
+		  document.getElementById("cat").style.display= "block";
+		  document.getElementById("dog").style.display= "none";
+		break;
+		case 'dog':
+		  document.getElementById("duck").style.display= "none";
+		  document.getElementById("cat").style.display= "none";
+		  document.getElementById("dog").style.display= "block";
+		break;
+
+
 	}
   </script>
 </body>
