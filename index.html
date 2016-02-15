@@ -97,7 +97,7 @@
 		<h1>Hello Duck!</h1>
 		<img width="200px" src="duck.jpg">
 		<p>
-			<button class="btn" onClick="ga('send', 'event', 'button', 'click', 'Click Duck');" id="click_duck"> Click</button>
+			<a href="direction.html?param=duck" class="btn" onClick="ga('send', 'event', 'button', 'click', 'Click Duck');" id="click_duck"> Click</a>
 		</p>
 	</div>
 
@@ -105,7 +105,7 @@
 		<h1>Hello Cat!</h1>
 		<img width="200px" src="cat.jpg">
 		<p>
-			<button class="btn"  onClick="ga('send', 'event', 'button', 'click', 'Click Cat');"  id="click_cat"> Click</button>
+			<a href="direction.html?param=cat"  class="btn"  onClick="ga('send', 'event', 'button', 'click', 'Click Cat');"  id="click_cat"> Click</a>
 		</p>
 	</div>
 
@@ -113,14 +113,15 @@
 		<h1>Hello Dog!</h1>
 		<img width="200px" src="dog.jpg">
 		<p>
-			<button class="btn"  onClick="ga('send', 'event', 'button', 'click', 'Click Dog');"  id="click_dog"> Click</button>
+			<a href="direction.html?param=Dog" class="btn"  onClick="ga('send', 'event', 'button', 'click', 'Click Dog');"  id="click_dog"> Click</a>
 		</p>
 	</div>
 
  <script type="text/javascript">
     
 	var flag= getQueryVariable('param');
-	console.log(flag+' ----');
+	var clickClass;
+	//console.log(flag+' ----');
 
 	switch(flag){
 		case 'duck':
@@ -138,9 +139,18 @@
 		  document.getElementById("cat").style.display= "none";
 		  document.getElementById("dog").style.display= "block";
 		break;
-
-
 	}
+
+
+	window.onload = function() {
+		
+		clickClass =  document.getElementsByClassName("btn");
+		
+		if(clickClass.click()){
+			console.log('is click');
+		}
+	}
+
   </script>
 </body>
 </html>
