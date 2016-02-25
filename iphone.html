@@ -3,7 +3,7 @@
 	<title>tester</title>
 	<!-- Google Analytics Content Experiment code -->
 	<script>function utmx_section(){}function utmx(){}(function(){var
-	k='116011007-1',d=document,l=d.location,c=d.cookie;
+	k='116011007-2',d=document,l=d.location,c=d.cookie;
 	if(l.search.indexOf('utm_expid='+k)>0)return;
 	function f(n){if(c){var i=c.indexOf(n+'=');if(i>-1){var j=c.
 	indexOf(';',i);return escape(c.substring(i+n.length+1,j<0?c.
@@ -15,6 +15,7 @@
 	'" type="text/javascript" charset="utf-8"><\/sc'+'ript>')})();
 	</script><script>utmx('url','A/B');</script>
 	<!-- End of Google Analytics Content Experiment code -->
+
 
 	<!-- Google Tag Manager -->
 	<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-MZBVLH"
@@ -100,48 +101,23 @@
 		<h1>Hello iphone!</h1>
 		<img width="200px" src="iphone.jpg">
 		<p>
-			<a href="direction.html?param=iphone" class="btn" onClick="ga('send', 'event', 'button', 'click', 'Click iphone');" id="click_iphone"> Beli</a>
-		</p>
-	</div>
-
-	<div id="android" style="display:none;">
-		<h1>Hello android!</h1>
-		<img width="200px" src="android.jpg">
-		<p>
-			<a href="direction.html?param=android"  class="btn"  onClick="ga('send', 'event', 'button', 'click', 'Click android');"  id="click_android"> Beli</a>
-		</p>
-	</div>
-
-	<div id="nokia" style="display:none;">
-		<h1>Hello nokia!</h1>
-		<img width="200px" src="nokia.jpg">
-		<p>
-			<a href="direction.html?param=nokia" class="btn"  onClick="ga('send', 'event', 'button', 'click', 'Click nokia');"  id="click_nokia"> Beli</a>
+			<p id="review" style="display:none"> Review</p>
+			<a href="direction.html?param=android"  class="btn"  onClick="ga('send', 'event', 'button', 'click', 'Click Iphone');"  id="click_android"> Beli</a>
 		</p>
 	</div>
 
  <script type="text/javascript">
     
-	var flag= getQueryVariable('param');
+	var flag= getQueryVariable('var');
+	var alt= getQueryVariable('alt');
 	var clickClass;
-	//console.log(flag+' ----');
+	
+	if(flag == "show-review"){
+		  document.getElementById("review").style.display= "block";
+	}
 
-	switch(flag){
-		case 'iphone':
-		  document.getElementById("iphone").style.display= "block";
-		  document.getElementById("android").style.display= "none";
-		  document.getElementById("nokia").style.display= "none";
-		break;
-		case 'android':
-		  document.getElementById("iphone").style.display= "none";
-		  document.getElementById("android").style.display= "block";
-		  document.getElementById("nokia").style.display= "none";
-		break;
-		case 'nokia':
-		  document.getElementById("iphone").style.display= "none";
-		  document.getElementById("android").style.display= "none";
-		  document.getElementById("nokia").style.display= "block";
-		break;
+	if(alt == "change-text"){
+		  document.getElementById("click_android").innerHTML = "Buy";
 	}
 
 
