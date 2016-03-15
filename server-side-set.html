@@ -9,10 +9,13 @@
 <script>
 	var chosenVariation = 2;
 	var experimentId = 'guO8E7rMSQerziXWQQ4t-A';
-  cxApi.setChosenVariation(
-    chosenVariation,             // The index of the variation shown to the visitor
-    experimentId                 // The id of the experiment the user has been exposed to
-  );
+	  cxApi.setChosenVariation(
+	    chosenVariation,             // The index of the variation shown to the visitor
+	    experimentId                 // The id of the experiment the user has been exposed to
+	  );
+	var variationNumber = cxApi.getChosenVariation(experimentId);
+
+	console.log(variationNumber);
 </script>
 <!-- End Set Experiment Values -->
 
