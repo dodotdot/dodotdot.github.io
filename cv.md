@@ -7,22 +7,29 @@ Tangerang Selatan, Banten - Indonesia
 
 *Experienced Software Engineer with a demonstrated history of working in the retail/startup/ecommerce industry. Strong engineering professional skilled in Latest Web Frontend Technology*
 
-PERSONAL INFORMATION
+
+
+Personal Information
+---
 
   Address: Orchid Park Blok A 12, Bhakti Jaya, Setu Pamulang, Tangerang Selatan, 15315
   
   Date of birth: 31 December 1984 Jakarta
 
 
-SOCIAL PROFILES
+Social Profiles
+---
 
-  * medium: https://medium.com/@dodotdot
-  
-  * github.com: https://github.com/dodotdot
-  
-  * twitter: twitter.com/dodotdot
 
-WORK EXPERIENCE
+  * medium: [https://medium.com/@dodotdot](https://medium.com/@dodotdot)
+  
+  * github.com: [https://github.com/dodotdot](https://github.com/dodotdot)
+  
+  * twitter: [twitter.com/dodotdot](twitter.com/dodotdot)
+  
+
+Work Experience
+---
 
   * System Analyst & Software Developer at PT. eBdesk Indonesia, Jakarta
     - Garuda Indonesia Central Operation / Synchronize data Migration Develop
@@ -53,13 +60,15 @@ WORK EXPERIENCE
     Projects adviser and code reviewer
 
 
-EDUCATION
+Education
+---
 
-  * May 2019 – May 2019
-
+  * 2002 – 2007
+  
     Budi Luhur University, Jakarta Bachelor of Information Technology
 
-SPEAKER
+Speaker
+---
 
   * Our Battle Against Technical Debt @tokopedia, Jakarta, February 2017 – February 2017
 
