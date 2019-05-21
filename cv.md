@@ -64,7 +64,9 @@ SPEAKER
   * Our Battle Against Technical Debt @tokopedia, Jakarta, February 2017 – February 2017
 
     https://www.slideshare.net/ifnu/our-battle-against-technical-debt-72565969
+  
   * JakartaJS #34 @blibli, Jakarta, October 2017 – October 2019
 
     Web Performance Budgeting
-https://speakerdeck.com/dodotdot/jakartajs-web-performance-budgeting
+    
+    https://speakerdeck.com/dodotdot/jakartajs-web-performance-budgeting
