@@ -5,7 +5,7 @@ Tangerang Selatan, Banten - Indonesia
 
 +62 8568482288 / [rm.herwidodo@gmail.com](mailto:rm.herwidodo@gmail.com)
 
-Experienced Software Engineer with a demonstrated history of working in the retail/startup/ecommerce industry. Strong engineering professional skilled in Latest Web Frontend Technology
+*Experienced Software Engineer with a demonstrated history of working in the retail/startup/ecommerce industry. Strong engineering professional skilled in Latest Web Frontend Technology*
 
 PERSONAL INFORMATION
 
