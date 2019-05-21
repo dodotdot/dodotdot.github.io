@@ -1,9 +1,9 @@
 # Herwidodo Kusumobroto
 #### Principal SDE (blibli.com)
 
-Tangerang Selatan
+Tangerang Selatan, Banten - Indonesia
 
-+62 8568482288
++62 8568482288 / [rm.herwidodo@gmail.com](mailto:rm.herwidodo@gmail.com)
 
 Experienced Software Engineer with a demonstrated history of working in the retail/startup/ecommerce industry. Strong engineering professional skilled in Latest Web Frontend Technology
 
@@ -63,10 +63,11 @@ SPEAKER
 
   * Our Battle Against Technical Debt @tokopedia, Jakarta, February 2017 – February 2017
 
-    https://www.slideshare.net/ifnu/our-battle-against-technical-debt-72565969
+    [https://www.slideshare.net/ifnu/our-battle-against-technical-debt-72565969](https://www.slideshare.net/ifnu/our-battle-against-technical-debt-72565969)
+
   
   * JakartaJS #34 @blibli, Jakarta, October 2017 – October 2019
 
     Web Performance Budgeting
     
-    https://speakerdeck.com/dodotdot/jakartajs-web-performance-budgeting
+    [https://speakerdeck.com/dodotdot/jakartajs-web-performance-budgeting](https://speakerdeck.com/dodotdot/jakartajs-web-performance-budgeting)
